@@ -1,14 +1,14 @@
-package hello;
+package bioskop;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-public class HelloController {
-    
-    @RequestMapping("/")
+public class TicketController {
+
+    @RequestMapping("/showing-seat")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "show-seat";
     }
-    
+
 }
